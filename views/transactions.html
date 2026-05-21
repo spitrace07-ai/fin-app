@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions | FinTrust Bank</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/transactions.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <div class="brand">
+                <span>FinTrust</span> Bank
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <a href="/dashboard" class="btn btn-outline" style="padding: 0.5rem 1rem;">Dashboard</a>
+                <a href="/" class="btn btn-outline" style="padding: 0.5rem 1rem;">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div style="margin: 4rem 0 2rem;">
+            <h1>Transaction History</h1>
+            <p style="color: var(--text-muted);">Review and audit your account activity records.</p>
+        </div>
+
+        <div class="glass-card" style="overflow-x: auto;">
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Transaction Details</th>
+                        <th>Amount</th>
+                        <th style="text-align:right">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="transaction-body">
+                    <!-- Loaded via JS -->
+                    <tr>
+                        <td colspan="3" style="text-align:center; padding: 4rem;">
+                            <div style="color: var(--text-muted);">Syncing with secure ledger...</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </main>
+</body>
+</html>

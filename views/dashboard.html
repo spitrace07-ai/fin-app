@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | FinTrust Bank</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/dashboard.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <div class="brand">
+                <span>FinTrust</span> Bank
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <span style="color: var(--text-muted); font-size: 0.9rem;">Secure Session Active</span>
+                <a href="/" class="btn btn-outline" style="padding: 0.5rem 1rem;">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div style="margin: 4rem 0;">
+            <h1>Dashboard</h1>
+            <p style="color: var(--text-muted);">Welcome back to your financial control center.</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="glass-card stat-card">
+                <p style="color: var(--text-muted);">Total Balance</p>
+                <div class="stat-value">$1,240.25</div>
+                <div style="color: var(--success); font-size: 0.9rem;">+2.4% from last month</div>
+            </div>
+            <div class="glass-card stat-card">
+                <p style="color: var(--text-muted);">Saved This Month</p>
+                <div class="stat-value">$450.00</div>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">On track for your goal</p>
+            </div>
+            <div class="glass-card stat-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem;">
+                <p style="color: var(--text-muted);">Quick Actions</p>
+                <a href="/transactions" class="btn btn-primary" style="width: 100%;">View Transaction History</a>
+            </div>
+        </div>
+
+        <div class="glass-card" style="margin-top: 3rem;">
+            <h3>Recent Activity</h3>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Stay updated with your latest account movements.</p>
+            <div style="text-align: center; padding: 2rem; color: var(--text-muted); border: 1px dashed var(--glass-border); border-radius: 0.5rem;">
+                <p>Full history available in the <a href="/transactions" style="color: var(--primary); text-decoration: none;">Transactions</a> tab.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
